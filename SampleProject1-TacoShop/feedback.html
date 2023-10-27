@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Feedback Form</title>
+        <link rel="icon" href="images/TacoIcon.png">
+
+    </head>
+    <body>
+        <form action="https://httpbin.org/post" method="post" enctype="text/plain">
+            <fieldset>
+                <fieldset>
+                    <legend>Costomer Details</legend>
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="mail">E-Mail :</label>
+                    <input type="email" id="mail" name="email" required>
+                    <br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Favorite Toco From Our Shop</legend>
+                    <label for="favFood">Taco List :</label>
+                    <input type="text" name="ff" id="favFood" list="food list" value="Taco">
+                    <datalist id="food list">
+                        <option value="Tacos Arabes Puebla"></option>
+                        <option value="Carne Asada Tacos"></option>
+                        <option value="Tacos Al Pastor"></option>
+                        <option value="Barbacoa Tacos"></option>
+                        <option value="Tacos de Buche"></option>
+                        <option value="Birria Tacos"></option>
+                        <option value="Tacos de Cabeza"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Comments</legend>
+                    <label for="Comments"></label>
+                    <textarea name="Comments" id="Comments" cols="100" rows="5"></textarea>
+                </fieldset>
+            </fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <a href="mainPage.html">Back to Site</a>
+    </body>
+
+</html>
